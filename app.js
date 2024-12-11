@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 
 
 // Conexión a MongoDB
-mongoose.connect('mongodb://127.0.0.1:27017/comidasDB', {
+mongoose.connect(process.env.URL_MONGO, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
